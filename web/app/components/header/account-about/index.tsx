@@ -49,10 +49,10 @@ export default function AccountAbout({
             <div className='text-[#1C64F2]'>
               {
                 IS_CE_EDITION
-                  ? <Link href={'https://github.com/langgenius/dify/blob/main/LICENSE'} target='_blank'>Open Source License</Link>
+                  ? <Link href={''} target='_blank'></Link>
                   : <>
-                    <Link href={locale === 'en' ? 'https://docs.dify.ai/user-agreement/privacy-policy' : 'https://docs.dify.ai/v/zh-hans/yong-hu-xie-yi/yin-si-xie-yi'} target='_blank'>Privacy Policy</Link>,
-                    <Link href={locale === 'en' ? 'https://docs.dify.ai/user-agreement/terms-of-service' : 'https://docs.dify.ai/v/zh-hans/yong-hu-xie-yi/fu-wu-xie-yi'} target='_blank'>Terms of Service</Link>
+                    <Link href={locale === 'en' ? 'https://chatspace.vn/user-agreement/privacy-policy' : 'https://chatspace.vn/v/zh-hans/yong-hu-xie-yi/yin-si-xie-yi'} target='_blank'>Privacy Policy</Link>,
+                    <Link href={locale === 'en' ? 'https://chatspace.vn/user-agreement/terms-of-service' : 'https://chatspace.vn/v/zh-hans/yong-hu-xie-yi/fu-wu-xie-yi'} target='_blank'>Terms of Service</Link>
                   </>
               }
             </div>
