@@ -15,7 +15,8 @@ async function embedChatbot () {
     return;
   }
   const isDev = !!difyChatbotConfig.isDev
-  const baseUrl = difyChatbotConfig.baseUrl || `https://${isDev ? 'dev.' : ''}udify.app`
+  //const baseUrl = difyChatbotConfig.baseUrl || `https://${isDev ? 'dev.' : ''}udify.app`
+  const baseUrl = difyChatbotConfig.baseUrl || `https://chatspace.vn`
   const openIcon = `<svg
             id="openIcon"
             width="24"
