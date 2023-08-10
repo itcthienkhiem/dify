@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: executing remote ssh commands using password
-      if: github.ref == 'refs/heads/deploy/dev'
-      uses: appleboy/ssh-action@v1.0.0
-      with:
-       host: ${{ secrets.SSH_HOST }}
-       username: ${{ secrets.SSH_USER }}
-       password: ${{ secrets.SSH_PASSWORD }}
-       script: whoami
+      run: |
+          if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+            echo "Workflow is running on the main branch"
+          else
+            echo "Workflow is not running on the main branch"
+          fi
+       
