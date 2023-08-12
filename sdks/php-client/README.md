@@ -1,6 +1,6 @@
-# Dify PHP SDK
+# Chatspace PHP SDK
 
-This is the PHP SDK for the Dify API, which allows you to easily integrate Dify into your PHP applications.
+This is the PHP SDK for the Chatspace API, which allows you to easily integrate Chatspace into your PHP applications.
 
 ## Requirements
 
